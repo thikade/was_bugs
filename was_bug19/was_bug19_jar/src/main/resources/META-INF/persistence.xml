@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="simple-pu" transaction-type="RESOURCE_LOCAL">
+        <non-jta-data-source>my-pu</non-jta-data-source>
+
+        <class>at.struct.wasbug19.entities.SimpleEntity</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="openjpa.PostLoadOnMerge" value="true"/>
+            <property name="openjpa.jdbc.MappingDefaults" value="ForeignKeyDeleteAction=restrict, JoinForeignKeyDeleteAction=restrict"/>
+
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+
+            <!-- enable trace-log -->
+            <property name="openjpa.Log" value="DefaultLevel=INFO,SQL=TRACE" />
+
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -28,6 +28,7 @@
     <modules>
         <module>was_bug22_backend_jar</module>
         <module>was_bug22_snapshot_jar</module>
+        <module>was_bug22_specialize_jar</module>
         <module>was_bug22_war</module>
         <module>was_bug22_ear</module>
     </modules>

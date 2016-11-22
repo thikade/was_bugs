@@ -15,15 +15,8 @@
     <packaging>pom</packaging>
 
     <description>
-        demonstrated bug: PMR XXXXX,010,618.
-
-        bla blah blaH
+        demonstrated issue: PMR 26819,010,618.
     </description>
-
-    <properties>
-        <!-- for this samples we also need JAX-WS -->
-        <tomee.classifier>plus</tomee.classifier>
-    </properties>
 
     <modules>
         <module>was_bug22_backend_jar</module>
@@ -33,10 +26,5 @@
         <module>was_bug22_ear</module>
     </modules>
 
-    <dependencies>
-
-
-
-    </dependencies>
 
 </project>

@@ -5,6 +5,7 @@
 * WAR: index.xhtml uses KinderzuschussKinderServiceImpl to display SnapshotData
 * bean UISnapShotData _@Specializes_ SnapshotData. Contained in WAR/WEB-INF/lib/specializes.jar
   
-  
+* URL: http://host:port/was_bug22/index.xhtml
+
 * expected result:
   `injected snapshotId: 101234`

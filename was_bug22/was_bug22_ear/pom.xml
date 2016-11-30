@@ -52,6 +52,12 @@
 
         <dependency>
             <groupId>at.struct.wasbugs</groupId>
+            <artifactId>was_bug22_specialize_jar</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>at.struct.wasbugs</groupId>
             <artifactId>was_bug22_war</artifactId>
             <version>${project.version}</version>
             <type>war</type>
